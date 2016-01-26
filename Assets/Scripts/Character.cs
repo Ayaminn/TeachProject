@@ -10,6 +10,8 @@ public class NewBehaviourScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetKey(KeyCode.RightArrow)) {
+			transform.position += new Vector3 (1, 0, 0);
+		}
 	}
 }
