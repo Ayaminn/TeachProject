@@ -13,5 +13,8 @@ public class NewBehaviourScript : MonoBehaviour {
 		if (Input.GetKey(KeyCode.RightArrow)) {
 			transform.position += new Vector3 (1, 0, 0);
 		}
+		if (Input.GetKey(KeyCode.LeftArrow)) {
+			transform.position += new Vector3 (-1, 0, 0);
+		}
 	}
 }
