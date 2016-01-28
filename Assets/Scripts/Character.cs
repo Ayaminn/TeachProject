@@ -21,9 +21,7 @@ public class Character : MonoBehaviour {
 		}
 		//ジャンプ
 		if (Input.GetKeyDown(KeyCode.Space)) {
-			if(rb.velocity.y < 0.2f) {
 				rb.AddForce(transform.up * 300);
-			}
 		}
 	}
 }
