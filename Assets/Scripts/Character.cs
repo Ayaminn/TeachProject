@@ -15,10 +15,17 @@ public class Character : MonoBehaviour {
 		if (Input.GetKey(KeyCode.RightArrow)) {
 			transform.position += new Vector3 (0.1f, 0, 0);
 		}
+
 		//左に移動
 		if (Input.GetKey(KeyCode.LeftArrow)) {
 			transform.position += new Vector3 (-0.1f, 0, 0);
 		}
+
+		//奥に移動
+		if (Input.GetKey(KeyCode.UpArrow)) {
+			transform.position += new Vector3 (0, 0, 0.1f);
+		}
+
 		//ジャンプ
 		if (Input.GetKeyDown(KeyCode.Space)) {
 				rb.AddForce(transform.up * 300);
