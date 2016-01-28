@@ -26,6 +26,11 @@ public class Character : MonoBehaviour {
 			transform.position += new Vector3 (0, 0, 0.1f);
 		}
 
+		//手前に移動
+		if (Input.GetKey(KeyCode.DownArrow)) {
+			transform.position += new Vector3 (0, 0, -0.1f);
+		}
+
 		//ジャンプ
 		if (Input.GetKeyDown(KeyCode.Space)) {
 				rb.AddForce(transform.up * 300);
