@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Character : MonoBehaviour {
-	Rigidbody rb;
+	public Rigidbody rb;
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +22,7 @@ public class Character : MonoBehaviour {
 		//ジャンプ
 		if (Input.GetKeyDown(KeyCode.Space)) {
 			if(rb.velocity.y < 0.2f) {
-				rb.AddForce(transform.up * 1);
+				rb.AddForce(transform.up * 300);
 			}
 		}
 	}
